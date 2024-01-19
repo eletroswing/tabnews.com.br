@@ -29,4 +29,6 @@ export {
   TrashIcon,
   UnfoldIcon,
   XCircleFillIcon,
+  BookmarkIcon,
+  BookmarkSlashIcon,
 } from '@primer/octicons-react';

@@ -15,6 +15,7 @@ export { default as PastTime } from '@/PastTime';
 export { default as NextNProgress } from '@/Progressbar';
 export { default as ReadTime } from '@/ReadTime';
 export { default as RecentTabNav } from '@/RecentTabNav';
+export { default as SaveButton } from '@/SaveButton';
 export { default as useSearchBox } from '@/SearchBox';
 export { default as TabCashCount } from '@/TabCashCount';
 export { default as TabCoinButtons } from '@/TabCoinButtons';

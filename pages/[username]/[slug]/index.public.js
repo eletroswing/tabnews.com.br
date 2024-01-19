@@ -1,7 +1,7 @@
 import { getStaticPropsRevalidate } from 'next-swr';
 import { useEffect, useState } from 'react';
 
-import { Box, Button, Confetti, Content, DefaultLayout, Link, TabCoinButtons, Tooltip } from '@/TabNewsUI';
+import { Box, Button, Confetti, Content, DefaultLayout, Link, SaveButton, TabCoinButtons, Tooltip } from '@/TabNewsUI';
 import { CommentDiscussionIcon, CommentIcon, FoldIcon, UnfoldIcon } from '@/TabNewsUI/icons';
 import { NotFoundError, ValidationError } from 'errors';
 import webserver from 'infra/webserver.js';
@@ -45,6 +45,7 @@ export default function Post({ contentFound, rootContentFound, parentContentFoun
               justifyContent: 'center',
             }}>
             <TabCoinButtons key={contentFound.id} content={contentFound} />
+            <SaveButton content={contentFound} />
             <Box
               sx={{
                 borderWidth: 0,
